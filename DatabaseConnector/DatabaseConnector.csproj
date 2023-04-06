@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>1.0.6</Version>
+		<PackageId>Vista.DatabaseConnector</PackageId>
+		<Authors>Raymond Backus</Authors>
+		<Company>VISTA college</Company>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DocumentationFile>C:\Users\r.backus\source\repos\DatabaseConnector\DatabaseConnector\DatabaseConnector.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<GenerateDocumentationFile>False</GenerateDocumentationFile>
+		<Copyright>2020 VISTA college</Copyright>
+		<PackageIcon>Vista_icon.png</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Folder Include="Files\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="Files\Vista_icon.png">
+	    <Pack>True</Pack>
+	    <PackagePath></PackagePath>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Dapper" Version="2.0.35" />
+	  <PackageReference Include="MySql.Data" Version="8.0.21" />
+	  <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+	</ItemGroup>
+
+</Project>

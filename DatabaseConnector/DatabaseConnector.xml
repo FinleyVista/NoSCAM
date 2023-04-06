@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DatabaseConnector</name>
+    </assembly>
+    <members>
+        <member name="T:Vista.DatabaseConnector.MySqlDb">
+            <summary>
+            Static class that contains Load and Save methods for MySQL
+            </summary>
+        </member>
+        <member name="M:Vista.DatabaseConnector.MySqlDb.LoadData``2(System.String,``1,System.String)">
+            <summary>
+            Method used to load data from a database
+            </summary>
+            <typeparam name="T">The type to return</typeparam>
+            <typeparam name="U">Type dynamic</typeparam>
+            <param name="sqlQuery">The sql query to execute</param>
+            <param name="parameters">An instance of a dynamic class that contains zero or more named parameter datamembers</param>
+            <param name="connectionString">The connectionstring to connect to the database</param>
+            <returns></returns>
+        </member>
+        <member name="M:Vista.DatabaseConnector.MySqlDb.SaveData``1(System.String,``0,System.String)">
+            <summary>
+            Method used to save data to a database
+            </summary>
+            <typeparam name="T">The type to save to the database</typeparam>
+            <param name="sqlQuery">The sql query used to save the object to the database</param>
+            <param name="parameters">An object of type T to be saved to the database</param>
+            <param name="connectionString">The connectionstring to connect to the database</param>
+        </member>
+        <member name="T:Vista.DatabaseConnector.SqlServerDb">
+            <summary>
+            Static class that contains Load and Save methods for MS SQL Server
+            </summary>
+        </member>
+        <member name="M:Vista.DatabaseConnector.SqlServerDb.LoadData``2(System.String,``1,System.String)">
+            <summary>
+            Method used to load data from a MS SQL Server database
+            </summary>
+            <typeparam name="T">The type to return</typeparam>
+            <typeparam name="U">Type dynamic</typeparam>
+            <param name="sqlQuery">The sql query to execute</param>
+            <param name="parameters">An instance of a dynamic class that contains zero or more named parameter datamembers</param>
+            <param name="connectionString">The connectionstring to connect to the database</param>
+            <returns></returns>
+        </member>
+        <member name="M:Vista.DatabaseConnector.SqlServerDb.SaveData``1(System.String,``0,System.String)">
+            <summary>
+            Method used to save data to a MS SQL Server database
+            </summary>
+            <typeparam name="T">The type to save to the database</typeparam>
+            <param name="sqlQuery">The sql query used to save the object to the database</param>
+            <param name="parameters">An object of type T to be saved to the database</param>
+            <param name="connectionString">The connectionstring to connect to the database</param>
+        </member>
+    </members>
+</doc>
